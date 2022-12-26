@@ -29,7 +29,7 @@ public class App {
             return new int[]{};
         }
 
-        int[] mass = Arrays.stream(array)
+        return Arrays.stream(array)
                 .collect(() -> new int[2],
                         (arr, i) -> {
                     if(i > 0){
@@ -42,7 +42,6 @@ public class App {
                             count[0] = sum[0];
                             count[1] = sum[1];
                         });
-        return mass;
     }
 
     public static int[] resultArray(int[] array) {
